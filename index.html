@@ -18,6 +18,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 	* {
+		--accented: red;
 		--color: #ffab4a;
 		--color-transparent: rgba(255, 172, 77, 0.57);
 		--font-size: 45%;
@@ -98,7 +99,7 @@
 	.button-hover:before {
 		text-align: center;
 		content: attr(data-text);
-		color: var(--color);
+		color: var(--accented);
 		position: absolute;
 		top: -2.75em;
 	}
@@ -106,18 +107,10 @@
 	h1 {
 		font-family: 'Quicksand';
 		font-weight: 200;
-		color: var(--color);
+		color: var(--accented);
 		font-size: calc(var(--font-size)*6);
 		text-align: center;
 		text-decoration: underline;
 		text-transform: capitalize;
-	}
-
-	#clock {
-		font-family: 'Anonymous Pro';
-		color: var(--color);
-		font-size: calc(var(--font-size)*8);
-		text-align: center;
-		margin: 0 auto;
 	}
 </style>
